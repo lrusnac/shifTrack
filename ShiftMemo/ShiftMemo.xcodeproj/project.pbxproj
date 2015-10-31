@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B37E524F1BE4F3DC009A4AB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37E524E1BE4F3DC009A4AB9 /* AppDelegate.swift */; };
-		B37E52511BE4F3DC009A4AB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37E52501BE4F3DC009A4AB9 /* ViewController.swift */; };
 		B37E52541BE4F3DC009A4AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37E52521BE4F3DC009A4AB9 /* Main.storyboard */; };
 		B37E52571BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B37E52551BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodeld */; };
 		B37E52591BE4F3DC009A4AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37E52581BE4F3DC009A4AB9 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* Begin PBXFileReference section */
 		B37E524B1BE4F3DC009A4AB9 /* ShiftMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiftMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37E524E1BE4F3DC009A4AB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B37E52501BE4F3DC009A4AB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B37E52531BE4F3DC009A4AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B37E52561BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShiftMemo.xcdatamodel; sourceTree = "<group>"; };
 		B37E52581BE4F3DC009A4AB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				B37E524E1BE4F3DC009A4AB9 /* AppDelegate.swift */,
-				B37E52501BE4F3DC009A4AB9 /* ViewController.swift */,
 				B37E52521BE4F3DC009A4AB9 /* Main.storyboard */,
 				B37E52581BE4F3DC009A4AB9 /* Assets.xcassets */,
 				B37E525A1BE4F3DC009A4AB9 /* LaunchScreen.storyboard */,
@@ -138,7 +135,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B37E52511BE4F3DC009A4AB9 /* ViewController.swift in Sources */,
 				B37E52571BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodeld in Sources */,
 				B37E524F1BE4F3DC009A4AB9 /* AppDelegate.swift in Sources */,
 			);

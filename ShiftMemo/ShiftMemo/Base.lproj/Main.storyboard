@@ -23,7 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LyJ-Ih-LZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1239" y="264"/>
+            <point key="canvasLocation" x="1239" y="580"/>
         </scene>
         <!--shifts-->
         <scene sceneID="cTY-4J-4uU">
@@ -55,7 +55,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UTV-Pe-SVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1239" y="951"/>
+            <point key="canvasLocation" x="1239" y="1253"/>
         </scene>
         <!--reports-->
         <scene sceneID="a7v-fp-VUs">
@@ -75,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4X2-Cc-cgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1239" y="1630"/>
+            <point key="canvasLocation" x="1239" y="1920"/>
         </scene>
         <!--settings-->
         <scene sceneID="xCq-6k-fOk">
@@ -107,7 +107,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mgb-kW-Sej" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1239" y="2303"/>
+            <point key="canvasLocation" x="1239" y="2575"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Lmi-Xl-AMN">
@@ -128,7 +128,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DHs-Uf-Og0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="419" y="595"/>
+            <point key="canvasLocation" x="-141" y="1979"/>
         </scene>
     </scenes>
 </document>
