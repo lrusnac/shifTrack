@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B37E524F1BE4F3DC009A4AB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37E524E1BE4F3DC009A4AB9 /* AppDelegate.swift */; };
+		B37E52511BE4F3DC009A4AB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37E52501BE4F3DC009A4AB9 /* ViewController.swift */; };
+		B37E52541BE4F3DC009A4AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37E52521BE4F3DC009A4AB9 /* Main.storyboard */; };
+		B37E52571BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B37E52551BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodeld */; };
+		B37E52591BE4F3DC009A4AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37E52581BE4F3DC009A4AB9 /* Assets.xcassets */; };
+		B37E525C1BE4F3DC009A4AB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37E525A1BE4F3DC009A4AB9 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B37E524B1BE4F3DC009A4AB9 /* ShiftMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiftMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37E524E1BE4F3DC009A4AB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B37E52501BE4F3DC009A4AB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B37E52531BE4F3DC009A4AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B37E52561BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShiftMemo.xcdatamodel; sourceTree = "<group>"; };
+		B37E52581BE4F3DC009A4AB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B37E525B1BE4F3DC009A4AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B37E525D1BE4F3DC009A4AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B37E52481BE4F3DC009A4AB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B37E52421BE4F3DC009A4AB9 = {
+			isa = PBXGroup;
+			children = (
+				B37E524D1BE4F3DC009A4AB9 /* ShiftMemo */,
+				B37E524C1BE4F3DC009A4AB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B37E524C1BE4F3DC009A4AB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B37E524B1BE4F3DC009A4AB9 /* ShiftMemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B37E524D1BE4F3DC009A4AB9 /* ShiftMemo */ = {
+			isa = PBXGroup;
+			children = (
+				B37E524E1BE4F3DC009A4AB9 /* AppDelegate.swift */,
+				B37E52501BE4F3DC009A4AB9 /* ViewController.swift */,
+				B37E52521BE4F3DC009A4AB9 /* Main.storyboard */,
+				B37E52581BE4F3DC009A4AB9 /* Assets.xcassets */,
+				B37E525A1BE4F3DC009A4AB9 /* LaunchScreen.storyboard */,
+				B37E525D1BE4F3DC009A4AB9 /* Info.plist */,
+				B37E52551BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodeld */,
+			);
+			path = ShiftMemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B37E524A1BE4F3DC009A4AB9 /* ShiftMemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B37E52601BE4F3DC009A4AB9 /* Build configuration list for PBXNativeTarget "ShiftMemo" */;
+			buildPhases = (
+				B37E52471BE4F3DC009A4AB9 /* Sources */,
+				B37E52481BE4F3DC009A4AB9 /* Frameworks */,
+				B37E52491BE4F3DC009A4AB9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShiftMemo;
+			productName = ShiftMemo;
+			productReference = B37E524B1BE4F3DC009A4AB9 /* ShiftMemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B37E52431BE4F3DC009A4AB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Leonid Rusnac";
+				TargetAttributes = {
+					B37E524A1BE4F3DC009A4AB9 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = B37E52461BE4F3DC009A4AB9 /* Build configuration list for PBXProject "ShiftMemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B37E52421BE4F3DC009A4AB9;
+			productRefGroup = B37E524C1BE4F3DC009A4AB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B37E524A1BE4F3DC009A4AB9 /* ShiftMemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B37E52491BE4F3DC009A4AB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37E525C1BE4F3DC009A4AB9 /* LaunchScreen.storyboard in Resources */,
+				B37E52591BE4F3DC009A4AB9 /* Assets.xcassets in Resources */,
+				B37E52541BE4F3DC009A4AB9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B37E52471BE4F3DC009A4AB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37E52511BE4F3DC009A4AB9 /* ViewController.swift in Sources */,
+				B37E52571BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodeld in Sources */,
+				B37E524F1BE4F3DC009A4AB9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B37E52521BE4F3DC009A4AB9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B37E52531BE4F3DC009A4AB9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B37E525A1BE4F3DC009A4AB9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B37E525B1BE4F3DC009A4AB9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B37E525E1BE4F3DC009A4AB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B37E525F1BE4F3DC009A4AB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B37E52611BE4F3DC009A4AB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ShiftMemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.bedifferent.ShiftMemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B37E52621BE4F3DC009A4AB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ShiftMemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.bedifferent.ShiftMemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B37E52461BE4F3DC009A4AB9 /* Build configuration list for PBXProject "ShiftMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37E525E1BE4F3DC009A4AB9 /* Debug */,
+				B37E525F1BE4F3DC009A4AB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B37E52601BE4F3DC009A4AB9 /* Build configuration list for PBXNativeTarget "ShiftMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37E52611BE4F3DC009A4AB9 /* Debug */,
+				B37E52621BE4F3DC009A4AB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B37E52551BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B37E52561BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodel */,
+			);
+			currentVersion = B37E52561BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodel */;
+			path = ShiftMemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B37E52431BE4F3DC009A4AB9 /* Project object */;
+}
