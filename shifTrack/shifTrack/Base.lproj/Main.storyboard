@@ -57,6 +57,76 @@
             </objects>
             <point key="canvasLocation" x="1782" y="780"/>
         </scene>
+        <!--Locations-->
+        <scene sceneID="Zx1-Y5-pNn">
+            <objects>
+                <tableViewController id="bHD-pd-ogS" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="XZF-3Y-Os3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="TcJ-qw-9MR">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TcJ-qw-9MR" id="7zE-4W-tPN">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bHD-pd-ogS" id="ai0-5O-TPw"/>
+                            <outlet property="delegate" destination="bHD-pd-ogS" id="wMl-LU-9gI"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Locations" id="dYe-Rx-rjf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QWo-Xz-mdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1790" y="1516"/>
+        </scene>
+        <!--Locations-->
+        <scene sceneID="Jvn-qX-Btc">
+            <objects>
+                <navigationController id="A4v-zy-sdC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Locations" id="hLQ-Pg-om5"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4A7-HE-wZz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bHD-pd-ogS" kind="relationship" relationship="rootViewController" id="OHo-xW-Cac"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bnb-AQ-igh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="1515"/>
+        </scene>
+        <!--Reports-->
+        <scene sceneID="Re4-SA-3Po">
+            <objects>
+                <viewController title="Reports" id="xe4-M1-Alq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qaq-AC-5IQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="eSZ-51-HP6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qBb-av-0mt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Reports" id="2IL-sn-TJP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SKd-NW-Hac" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970" y="2248"/>
+        </scene>
         <!--shifts-->
         <scene sceneID="aCa-xV-Omb">
             <objects>
@@ -88,6 +158,8 @@
                     <connections>
                         <segue destination="1Lo-k6-caU" kind="relationship" relationship="viewControllers" id="R5s-XQ-P9M"/>
                         <segue destination="lsb-5E-boO" kind="relationship" relationship="viewControllers" id="uOS-Vy-ewS"/>
+                        <segue destination="A4v-zy-sdC" kind="relationship" relationship="viewControllers" id="20Y-0y-J90"/>
+                        <segue destination="xe4-M1-Alq" kind="relationship" relationship="viewControllers" id="vJP-Gb-T9C"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJI-kd-pKI" userLabel="First Responder" sceneMemberID="firstResponder"/>
