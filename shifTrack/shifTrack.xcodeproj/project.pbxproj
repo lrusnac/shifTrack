@@ -12,6 +12,10 @@
 		B3E2D4DE1BE8F8D5009A0550 /* shifTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4DC1BE8F8D5009A0550 /* shifTrack.xcdatamodeld */; };
 		B3E2D4E01BE8F8D5009A0550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E2D4DF1BE8F8D5009A0550 /* Assets.xcassets */; };
 		B3E2D4E31BE8F8D5009A0550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E2D4E11BE8F8D5009A0550 /* LaunchScreen.storyboard */; };
+		B3E2D4EC1BE8FE6A009A0550 /* Shift+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4EA1BE8FE6A009A0550 /* Shift+CoreDataProperties.swift */; };
+		B3E2D4ED1BE8FE6A009A0550 /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4EB1BE8FE6A009A0550 /* Shift.swift */; };
+		B3E2D4F01BE8FF24009A0550 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4EE1BE8FF24009A0550 /* Location+CoreDataProperties.swift */; };
+		B3E2D4F11BE8FF24009A0550 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4EF1BE8FF24009A0550 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		B3E2D4DF1BE8F8D5009A0550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3E2D4E21BE8F8D5009A0550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3E2D4E41BE8F8D5009A0550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E2D4EA1BE8FE6A009A0550 /* Shift+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shift+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B3E2D4EB1BE8FE6A009A0550 /* Shift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
+		B3E2D4EE1BE8FF24009A0550 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B3E2D4EF1BE8FF24009A0550 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,10 @@
 		B3E2D4C91BE8F8D5009A0550 = {
 			isa = PBXGroup;
 			children = (
+				B3E2D4EE1BE8FF24009A0550 /* Location+CoreDataProperties.swift */,
+				B3E2D4EF1BE8FF24009A0550 /* Location.swift */,
+				B3E2D4EA1BE8FE6A009A0550 /* Shift+CoreDataProperties.swift */,
+				B3E2D4EB1BE8FE6A009A0550 /* Shift.swift */,
 				B3E2D4D41BE8F8D5009A0550 /* shifTrack */,
 				B3E2D4D31BE8F8D5009A0550 /* Products */,
 			);
@@ -135,8 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3E2D4ED1BE8FE6A009A0550 /* Shift.swift in Sources */,
 				B3E2D4D61BE8F8D5009A0550 /* AppDelegate.swift in Sources */,
+				B3E2D4EC1BE8FE6A009A0550 /* Shift+CoreDataProperties.swift in Sources */,
 				B3E2D4DE1BE8F8D5009A0550 /* shifTrack.xcdatamodeld in Sources */,
+				B3E2D4F11BE8FF24009A0550 /* Location.swift in Sources */,
+				B3E2D4F01BE8FF24009A0550 /* Location+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +267,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = shifTrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = me.bedifferent.shifTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -262,6 +279,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = shifTrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = me.bedifferent.shifTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
