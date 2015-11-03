@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B322EFF11BE9059A00483DA7 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322EFF01BE9059A00483DA7 /* MainTabViewController.swift */; };
+		B322EFF31BE90A8700483DA7 /* ShiftsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322EFF21BE90A8700483DA7 /* ShiftsTableViewController.swift */; };
+		B322EFF51BE90AA700483DA7 /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322EFF41BE90AA700483DA7 /* LocationsTableViewController.swift */; };
+		B322EFF71BE90ACA00483DA7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322EFF61BE90ACA00483DA7 /* HomeViewController.swift */; };
+		B322EFF91BE90CCA00483DA7 /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322EFF81BE90CCA00483DA7 /* ReportsViewController.swift */; };
 		B3E2D4D61BE8F8D5009A0550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4D51BE8F8D5009A0550 /* AppDelegate.swift */; };
 		B3E2D4DB1BE8F8D5009A0550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E2D4D91BE8F8D5009A0550 /* Main.storyboard */; };
 		B3E2D4DE1BE8F8D5009A0550 /* shifTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4DC1BE8F8D5009A0550 /* shifTrack.xcdatamodeld */; };
@@ -19,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B322EFF01BE9059A00483DA7 /* MainTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabViewController.swift; path = ViewController/MainTabViewController.swift; sourceTree = "<group>"; };
+		B322EFF21BE90A8700483DA7 /* ShiftsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShiftsTableViewController.swift; path = ViewController/ShiftsTableViewController.swift; sourceTree = "<group>"; };
+		B322EFF41BE90AA700483DA7 /* LocationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationsTableViewController.swift; path = ViewController/LocationsTableViewController.swift; sourceTree = "<group>"; };
+		B322EFF61BE90ACA00483DA7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ViewController/HomeViewController.swift; sourceTree = "<group>"; };
+		B322EFF81BE90CCA00483DA7 /* ReportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReportsViewController.swift; path = ViewController/ReportsViewController.swift; sourceTree = "<group>"; };
 		B3E2D4D21BE8F8D5009A0550 /* shifTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shifTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E2D4D51BE8F8D5009A0550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E2D4DA1BE8F8D5009A0550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,9 +64,22 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		B322EFEF1BE904EC00483DA7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B322EFF01BE9059A00483DA7 /* MainTabViewController.swift */,
+				B322EFF21BE90A8700483DA7 /* ShiftsTableViewController.swift */,
+				B322EFF41BE90AA700483DA7 /* LocationsTableViewController.swift */,
+				B322EFF61BE90ACA00483DA7 /* HomeViewController.swift */,
+				B322EFF81BE90CCA00483DA7 /* ReportsViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		B3E2D4C91BE8F8D5009A0550 = {
 			isa = PBXGroup;
 			children = (
+				B322EFEF1BE904EC00483DA7 /* ViewController */,
 				B322EFEE1BE901DF00483DA7 /* Model */,
 				B3E2D4D41BE8F8D5009A0550 /* shifTrack */,
 				B3E2D4D31BE8F8D5009A0550 /* Products */,
@@ -157,9 +180,14 @@
 			files = (
 				B3E2D4ED1BE8FE6A009A0550 /* Shift.swift in Sources */,
 				B3E2D4D61BE8F8D5009A0550 /* AppDelegate.swift in Sources */,
+				B322EFF51BE90AA700483DA7 /* LocationsTableViewController.swift in Sources */,
+				B322EFF31BE90A8700483DA7 /* ShiftsTableViewController.swift in Sources */,
 				B3E2D4EC1BE8FE6A009A0550 /* Shift+CoreDataProperties.swift in Sources */,
+				B322EFF71BE90ACA00483DA7 /* HomeViewController.swift in Sources */,
+				B322EFF91BE90CCA00483DA7 /* ReportsViewController.swift in Sources */,
 				B3E2D4DE1BE8F8D5009A0550 /* shifTrack.xcdatamodeld in Sources */,
 				B3E2D4F11BE8FF24009A0550 /* Location.swift in Sources */,
+				B322EFF11BE9059A00483DA7 /* MainTabViewController.swift in Sources */,
 				B3E2D4F01BE8FF24009A0550 /* Location+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
