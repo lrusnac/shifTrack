@@ -12,15 +12,15 @@
 		B322EFF51BE90AA700483DA7 /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322EFF41BE90AA700483DA7 /* LocationsTableViewController.swift */; };
 		B322EFF71BE90ACA00483DA7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322EFF61BE90ACA00483DA7 /* HomeViewController.swift */; };
 		B322EFF91BE90CCA00483DA7 /* ReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322EFF81BE90CCA00483DA7 /* ReportsViewController.swift */; };
+		B322F0021BE913C400483DA7 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322EFFE1BE913C400483DA7 /* Location+CoreDataProperties.swift */; };
+		B322F0031BE913C400483DA7 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322EFFF1BE913C400483DA7 /* Location.swift */; };
+		B322F0041BE913C400483DA7 /* Shift+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322F0001BE913C400483DA7 /* Shift+CoreDataProperties.swift */; };
+		B322F0051BE913C400483DA7 /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322F0011BE913C400483DA7 /* Shift.swift */; };
 		B3E2D4D61BE8F8D5009A0550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4D51BE8F8D5009A0550 /* AppDelegate.swift */; };
 		B3E2D4DB1BE8F8D5009A0550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E2D4D91BE8F8D5009A0550 /* Main.storyboard */; };
 		B3E2D4DE1BE8F8D5009A0550 /* shifTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4DC1BE8F8D5009A0550 /* shifTrack.xcdatamodeld */; };
 		B3E2D4E01BE8F8D5009A0550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E2D4DF1BE8F8D5009A0550 /* Assets.xcassets */; };
 		B3E2D4E31BE8F8D5009A0550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E2D4E11BE8F8D5009A0550 /* LaunchScreen.storyboard */; };
-		B3E2D4EC1BE8FE6A009A0550 /* Shift+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4EA1BE8FE6A009A0550 /* Shift+CoreDataProperties.swift */; };
-		B3E2D4ED1BE8FE6A009A0550 /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4EB1BE8FE6A009A0550 /* Shift.swift */; };
-		B3E2D4F01BE8FF24009A0550 /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4EE1BE8FF24009A0550 /* Location+CoreDataProperties.swift */; };
-		B3E2D4F11BE8FF24009A0550 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4EF1BE8FF24009A0550 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +29,10 @@
 		B322EFF41BE90AA700483DA7 /* LocationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationsTableViewController.swift; path = ViewController/LocationsTableViewController.swift; sourceTree = "<group>"; };
 		B322EFF61BE90ACA00483DA7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ViewController/HomeViewController.swift; sourceTree = "<group>"; };
 		B322EFF81BE90CCA00483DA7 /* ReportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReportsViewController.swift; path = ViewController/ReportsViewController.swift; sourceTree = "<group>"; };
+		B322EFFE1BE913C400483DA7 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Location+CoreDataProperties.swift"; path = "Model/Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B322EFFF1BE913C400483DA7 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Model/Location.swift; sourceTree = "<group>"; };
+		B322F0001BE913C400483DA7 /* Shift+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Shift+CoreDataProperties.swift"; path = "Model/Shift+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B322F0011BE913C400483DA7 /* Shift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shift.swift; path = Model/Shift.swift; sourceTree = "<group>"; };
 		B3E2D4D21BE8F8D5009A0550 /* shifTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shifTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E2D4D51BE8F8D5009A0550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E2D4DA1BE8F8D5009A0550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -36,10 +40,6 @@
 		B3E2D4DF1BE8F8D5009A0550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3E2D4E21BE8F8D5009A0550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3E2D4E41BE8F8D5009A0550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3E2D4EA1BE8FE6A009A0550 /* Shift+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Shift+CoreDataProperties.swift"; path = "Model/Shift+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		B3E2D4EB1BE8FE6A009A0550 /* Shift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shift.swift; path = Model/Shift.swift; sourceTree = "<group>"; };
-		B3E2D4EE1BE8FF24009A0550 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Location+CoreDataProperties.swift"; path = "Model/Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		B3E2D4EF1BE8FF24009A0550 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Model/Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +56,10 @@
 		B322EFEE1BE901DF00483DA7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B3E2D4EE1BE8FF24009A0550 /* Location+CoreDataProperties.swift */,
-				B3E2D4EF1BE8FF24009A0550 /* Location.swift */,
-				B3E2D4EA1BE8FE6A009A0550 /* Shift+CoreDataProperties.swift */,
-				B3E2D4EB1BE8FE6A009A0550 /* Shift.swift */,
+				B322EFFE1BE913C400483DA7 /* Location+CoreDataProperties.swift */,
+				B322EFFF1BE913C400483DA7 /* Location.swift */,
+				B322F0001BE913C400483DA7 /* Shift+CoreDataProperties.swift */,
+				B322F0011BE913C400483DA7 /* Shift.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -178,17 +178,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E2D4ED1BE8FE6A009A0550 /* Shift.swift in Sources */,
+				B322F0021BE913C400483DA7 /* Location+CoreDataProperties.swift in Sources */,
 				B3E2D4D61BE8F8D5009A0550 /* AppDelegate.swift in Sources */,
 				B322EFF51BE90AA700483DA7 /* LocationsTableViewController.swift in Sources */,
+				B322F0051BE913C400483DA7 /* Shift.swift in Sources */,
 				B322EFF31BE90A8700483DA7 /* ShiftsTableViewController.swift in Sources */,
-				B3E2D4EC1BE8FE6A009A0550 /* Shift+CoreDataProperties.swift in Sources */,
+				B322F0031BE913C400483DA7 /* Location.swift in Sources */,
 				B322EFF71BE90ACA00483DA7 /* HomeViewController.swift in Sources */,
 				B322EFF91BE90CCA00483DA7 /* ReportsViewController.swift in Sources */,
 				B3E2D4DE1BE8F8D5009A0550 /* shifTrack.xcdatamodeld in Sources */,
-				B3E2D4F11BE8FF24009A0550 /* Location.swift in Sources */,
+				B322F0041BE913C400483DA7 /* Shift+CoreDataProperties.swift in Sources */,
 				B322EFF11BE9059A00483DA7 /* MainTabViewController.swift in Sources */,
-				B3E2D4F01BE8FF24009A0550 /* Location+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
