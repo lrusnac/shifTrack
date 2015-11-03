@@ -142,7 +142,7 @@
         <!--Reports-->
         <scene sceneID="Re4-SA-3Po">
             <objects>
-                <viewController title="Reports" id="xe4-M1-Alq" sceneMemberID="viewController">
+                <viewController title="Reports" id="xe4-M1-Alq" customClass="ReportsViewController" customModule="shifTrack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qaq-AC-5IQ"/>
                         <viewControllerLayoutGuide type="bottom" id="eSZ-51-HP6"/>
