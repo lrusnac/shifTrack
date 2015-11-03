@@ -26,10 +26,10 @@
 		B3E2D4DF1BE8F8D5009A0550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3E2D4E21BE8F8D5009A0550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3E2D4E41BE8F8D5009A0550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B3E2D4EA1BE8FE6A009A0550 /* Shift+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shift+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		B3E2D4EB1BE8FE6A009A0550 /* Shift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
-		B3E2D4EE1BE8FF24009A0550 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		B3E2D4EF1BE8FF24009A0550 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		B3E2D4EA1BE8FE6A009A0550 /* Shift+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Shift+CoreDataProperties.swift"; path = "Model/Shift+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B3E2D4EB1BE8FE6A009A0550 /* Shift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shift.swift; path = Model/Shift.swift; sourceTree = "<group>"; };
+		B3E2D4EE1BE8FF24009A0550 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Location+CoreDataProperties.swift"; path = "Model/Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B3E2D4EF1BE8FF24009A0550 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Model/Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,13 +43,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B3E2D4C91BE8F8D5009A0550 = {
+		B322EFEE1BE901DF00483DA7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				B3E2D4EE1BE8FF24009A0550 /* Location+CoreDataProperties.swift */,
 				B3E2D4EF1BE8FF24009A0550 /* Location.swift */,
 				B3E2D4EA1BE8FE6A009A0550 /* Shift+CoreDataProperties.swift */,
 				B3E2D4EB1BE8FE6A009A0550 /* Shift.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B3E2D4C91BE8F8D5009A0550 = {
+			isa = PBXGroup;
+			children = (
+				B322EFEE1BE901DF00483DA7 /* Model */,
 				B3E2D4D41BE8F8D5009A0550 /* shifTrack */,
 				B3E2D4D31BE8F8D5009A0550 /* Products */,
 			);
@@ -304,6 +312,7 @@
 				B3E2D4E91BE8F8D5009A0550 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
