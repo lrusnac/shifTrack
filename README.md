@@ -1,4 +1,4 @@
-# ShiftMemo
+# shifTrack
 
 
 ## Notes
@@ -15,6 +15,6 @@ generate reports.
 There are similar apps on the store but as a user you
 need to remember to start the timer and stop it manually, that is not
 really practical. It's like logging the times in a notepad. With
-ShiftMemo you can forget about registering your times and the app will
+shifTrack you can forget about registering your times and the app will
 do it for you.
 

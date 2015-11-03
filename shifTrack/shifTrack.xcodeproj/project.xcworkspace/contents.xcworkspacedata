@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ShiftMemo.xcodeproj">
+      location = "self:shifTrack.xcodeproj">
    </FileRef>
 </Workspace>

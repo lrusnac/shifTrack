@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B37E524F1BE4F3DC009A4AB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37E524E1BE4F3DC009A4AB9 /* AppDelegate.swift */; };
-		B37E52541BE4F3DC009A4AB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37E52521BE4F3DC009A4AB9 /* Main.storyboard */; };
-		B37E52571BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B37E52551BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodeld */; };
-		B37E52591BE4F3DC009A4AB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37E52581BE4F3DC009A4AB9 /* Assets.xcassets */; };
-		B37E525C1BE4F3DC009A4AB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37E525A1BE4F3DC009A4AB9 /* LaunchScreen.storyboard */; };
+		B3E2D4D61BE8F8D5009A0550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4D51BE8F8D5009A0550 /* AppDelegate.swift */; };
+		B3E2D4DB1BE8F8D5009A0550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E2D4D91BE8F8D5009A0550 /* Main.storyboard */; };
+		B3E2D4DE1BE8F8D5009A0550 /* shifTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4DC1BE8F8D5009A0550 /* shifTrack.xcdatamodeld */; };
+		B3E2D4E01BE8F8D5009A0550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E2D4DF1BE8F8D5009A0550 /* Assets.xcassets */; };
+		B3E2D4E31BE8F8D5009A0550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E2D4E11BE8F8D5009A0550 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B37E524B1BE4F3DC009A4AB9 /* ShiftMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiftMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B37E524E1BE4F3DC009A4AB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B37E52531BE4F3DC009A4AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B37E52561BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShiftMemo.xcdatamodel; sourceTree = "<group>"; };
-		B37E52581BE4F3DC009A4AB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B37E525B1BE4F3DC009A4AB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B37E525D1BE4F3DC009A4AB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E2D4D21BE8F8D5009A0550 /* shifTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shifTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E2D4D51BE8F8D5009A0550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3E2D4DA1BE8F8D5009A0550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3E2D4DD1BE8F8D5009A0550 /* shifTrack.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = shifTrack.xcdatamodel; sourceTree = "<group>"; };
+		B3E2D4DF1BE8F8D5009A0550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3E2D4E21BE8F8D5009A0550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3E2D4E41BE8F8D5009A0550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B37E52481BE4F3DC009A4AB9 /* Frameworks */ = {
+		B3E2D4CF1BE8F8D5009A0550 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,71 +35,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B37E52421BE4F3DC009A4AB9 = {
+		B3E2D4C91BE8F8D5009A0550 = {
 			isa = PBXGroup;
 			children = (
-				B37E524D1BE4F3DC009A4AB9 /* ShiftMemo */,
-				B37E524C1BE4F3DC009A4AB9 /* Products */,
+				B3E2D4D41BE8F8D5009A0550 /* shifTrack */,
+				B3E2D4D31BE8F8D5009A0550 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B37E524C1BE4F3DC009A4AB9 /* Products */ = {
+		B3E2D4D31BE8F8D5009A0550 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B37E524B1BE4F3DC009A4AB9 /* ShiftMemo.app */,
+				B3E2D4D21BE8F8D5009A0550 /* shifTrack.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B37E524D1BE4F3DC009A4AB9 /* ShiftMemo */ = {
+		B3E2D4D41BE8F8D5009A0550 /* shifTrack */ = {
 			isa = PBXGroup;
 			children = (
-				B37E524E1BE4F3DC009A4AB9 /* AppDelegate.swift */,
-				B37E52521BE4F3DC009A4AB9 /* Main.storyboard */,
-				B37E52581BE4F3DC009A4AB9 /* Assets.xcassets */,
-				B37E525A1BE4F3DC009A4AB9 /* LaunchScreen.storyboard */,
-				B37E525D1BE4F3DC009A4AB9 /* Info.plist */,
-				B37E52551BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodeld */,
+				B3E2D4D51BE8F8D5009A0550 /* AppDelegate.swift */,
+				B3E2D4D91BE8F8D5009A0550 /* Main.storyboard */,
+				B3E2D4DF1BE8F8D5009A0550 /* Assets.xcassets */,
+				B3E2D4E11BE8F8D5009A0550 /* LaunchScreen.storyboard */,
+				B3E2D4E41BE8F8D5009A0550 /* Info.plist */,
+				B3E2D4DC1BE8F8D5009A0550 /* shifTrack.xcdatamodeld */,
 			);
-			path = ShiftMemo;
+			path = shifTrack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B37E524A1BE4F3DC009A4AB9 /* ShiftMemo */ = {
+		B3E2D4D11BE8F8D5009A0550 /* shifTrack */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B37E52601BE4F3DC009A4AB9 /* Build configuration list for PBXNativeTarget "ShiftMemo" */;
+			buildConfigurationList = B3E2D4E71BE8F8D5009A0550 /* Build configuration list for PBXNativeTarget "shifTrack" */;
 			buildPhases = (
-				B37E52471BE4F3DC009A4AB9 /* Sources */,
-				B37E52481BE4F3DC009A4AB9 /* Frameworks */,
-				B37E52491BE4F3DC009A4AB9 /* Resources */,
+				B3E2D4CE1BE8F8D5009A0550 /* Sources */,
+				B3E2D4CF1BE8F8D5009A0550 /* Frameworks */,
+				B3E2D4D01BE8F8D5009A0550 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ShiftMemo;
-			productName = ShiftMemo;
-			productReference = B37E524B1BE4F3DC009A4AB9 /* ShiftMemo.app */;
+			name = shifTrack;
+			productName = shifTrack;
+			productReference = B3E2D4D21BE8F8D5009A0550 /* shifTrack.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B37E52431BE4F3DC009A4AB9 /* Project object */ = {
+		B3E2D4CA1BE8F8D5009A0550 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Leonid Rusnac";
 				TargetAttributes = {
-					B37E524A1BE4F3DC009A4AB9 = {
+					B3E2D4D11BE8F8D5009A0550 = {
 						CreatedOnToolsVersion = 7.1;
 					};
 				};
 			};
-			buildConfigurationList = B37E52461BE4F3DC009A4AB9 /* Build configuration list for PBXProject "ShiftMemo" */;
+			buildConfigurationList = B3E2D4CD1BE8F8D5009A0550 /* Build configuration list for PBXProject "shifTrack" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -107,54 +107,54 @@
 				en,
 				Base,
 			);
-			mainGroup = B37E52421BE4F3DC009A4AB9;
-			productRefGroup = B37E524C1BE4F3DC009A4AB9 /* Products */;
+			mainGroup = B3E2D4C91BE8F8D5009A0550;
+			productRefGroup = B3E2D4D31BE8F8D5009A0550 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B37E524A1BE4F3DC009A4AB9 /* ShiftMemo */,
+				B3E2D4D11BE8F8D5009A0550 /* shifTrack */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B37E52491BE4F3DC009A4AB9 /* Resources */ = {
+		B3E2D4D01BE8F8D5009A0550 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B37E525C1BE4F3DC009A4AB9 /* LaunchScreen.storyboard in Resources */,
-				B37E52591BE4F3DC009A4AB9 /* Assets.xcassets in Resources */,
-				B37E52541BE4F3DC009A4AB9 /* Main.storyboard in Resources */,
+				B3E2D4E31BE8F8D5009A0550 /* LaunchScreen.storyboard in Resources */,
+				B3E2D4E01BE8F8D5009A0550 /* Assets.xcassets in Resources */,
+				B3E2D4DB1BE8F8D5009A0550 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B37E52471BE4F3DC009A4AB9 /* Sources */ = {
+		B3E2D4CE1BE8F8D5009A0550 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B37E52571BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodeld in Sources */,
-				B37E524F1BE4F3DC009A4AB9 /* AppDelegate.swift in Sources */,
+				B3E2D4D61BE8F8D5009A0550 /* AppDelegate.swift in Sources */,
+				B3E2D4DE1BE8F8D5009A0550 /* shifTrack.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B37E52521BE4F3DC009A4AB9 /* Main.storyboard */ = {
+		B3E2D4D91BE8F8D5009A0550 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B37E52531BE4F3DC009A4AB9 /* Base */,
+				B3E2D4DA1BE8F8D5009A0550 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		B37E525A1BE4F3DC009A4AB9 /* LaunchScreen.storyboard */ = {
+		B3E2D4E11BE8F8D5009A0550 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B37E525B1BE4F3DC009A4AB9 /* Base */,
+				B3E2D4E21BE8F8D5009A0550 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B37E525E1BE4F3DC009A4AB9 /* Debug */ = {
+		B3E2D4E51BE8F8D5009A0550 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -207,7 +207,7 @@
 			};
 			name = Debug;
 		};
-		B37E525F1BE4F3DC009A4AB9 /* Release */ = {
+		B3E2D4E61BE8F8D5009A0550 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -245,24 +245,24 @@
 			};
 			name = Release;
 		};
-		B37E52611BE4F3DC009A4AB9 /* Debug */ = {
+		B3E2D4E81BE8F8D5009A0550 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ShiftMemo/Info.plist;
+				INFOPLIST_FILE = shifTrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.bedifferent.ShiftMemo;
+				PRODUCT_BUNDLE_IDENTIFIER = me.bedifferent.shifTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		B37E52621BE4F3DC009A4AB9 /* Release */ = {
+		B3E2D4E91BE8F8D5009A0550 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ShiftMemo/Info.plist;
+				INFOPLIST_FILE = shifTrack/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.bedifferent.ShiftMemo;
+				PRODUCT_BUNDLE_IDENTIFIER = me.bedifferent.shifTrack;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -270,37 +270,37 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B37E52461BE4F3DC009A4AB9 /* Build configuration list for PBXProject "ShiftMemo" */ = {
+		B3E2D4CD1BE8F8D5009A0550 /* Build configuration list for PBXProject "shifTrack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B37E525E1BE4F3DC009A4AB9 /* Debug */,
-				B37E525F1BE4F3DC009A4AB9 /* Release */,
+				B3E2D4E51BE8F8D5009A0550 /* Debug */,
+				B3E2D4E61BE8F8D5009A0550 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B37E52601BE4F3DC009A4AB9 /* Build configuration list for PBXNativeTarget "ShiftMemo" */ = {
+		B3E2D4E71BE8F8D5009A0550 /* Build configuration list for PBXNativeTarget "shifTrack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B37E52611BE4F3DC009A4AB9 /* Debug */,
-				B37E52621BE4F3DC009A4AB9 /* Release */,
+				B3E2D4E81BE8F8D5009A0550 /* Debug */,
+				B3E2D4E91BE8F8D5009A0550 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B37E52551BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodeld */ = {
+		B3E2D4DC1BE8F8D5009A0550 /* shifTrack.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				B37E52561BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodel */,
+				B3E2D4DD1BE8F8D5009A0550 /* shifTrack.xcdatamodel */,
 			);
-			currentVersion = B37E52561BE4F3DC009A4AB9 /* ShiftMemo.xcdatamodel */;
-			path = ShiftMemo.xcdatamodeld;
+			currentVersion = B3E2D4DD1BE8F8D5009A0550 /* shifTrack.xcdatamodel */;
+			path = shifTrack.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = B37E52431BE4F3DC009A4AB9 /* Project object */;
+	rootObject = B3E2D4CA1BE8F8D5009A0550 /* Project object */;
 }

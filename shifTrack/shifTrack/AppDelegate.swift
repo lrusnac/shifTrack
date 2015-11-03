@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  ShiftMemo
+//  shifTrack
 //
-//  Created by Leonid Rusnac on 31/10/15.
+//  Created by Leonid Rusnac on 03/11/15.
 //  Copyright © 2015 Leonid Rusnac. All rights reserved.
 //
 
@@ -47,14 +47,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Core Data stack
 
     lazy var applicationDocumentsDirectory: NSURL = {
-        // The directory the application uses to store the Core Data store file. This code uses a directory named "me.bedifferent.ShiftMemo" in the application's documents Application Support directory.
+        // The directory the application uses to store the Core Data store file. This code uses a directory named "me.bedifferent.shifTrack" in the application's documents Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
         return urls[urls.count-1]
     }()
 
     lazy var managedObjectModel: NSManagedObjectModel = {
         // The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.
-        let modelURL = NSBundle.mainBundle().URLForResource("ShiftMemo", withExtension: "momd")!
+        let modelURL = NSBundle.mainBundle().URLForResource("shifTrack", withExtension: "momd")!
         return NSManagedObjectModel(contentsOfURL: modelURL)!
     }()
 
