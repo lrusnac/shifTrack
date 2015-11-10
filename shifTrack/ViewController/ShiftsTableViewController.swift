@@ -3,30 +3,26 @@ import CoreData
 
 class ShiftsTableViewController: UITableViewController {
 
-    var shifts = [Shift]()
+    var shifts = [Shift]() // TODO put the datasource in another class
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        title = "\"The List\""
-        tableView.registerClass(UITableViewCell.self,
-            forCellReuseIdentifier: "Cell")
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        print("view will appear")
         
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
         
         let fetchRequest = NSFetchRequest(entityName: "Shift")
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "startTime", ascending: false)]
         
         do {
             let results = try managedContext.executeFetchRequest(fetchRequest)
@@ -50,16 +46,22 @@ class ShiftsTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell")
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("shift") as! ShiftTableViewCell
+        
         let shift = shifts[indexPath.row]
         
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "dd-MM-yyyy"
+        let dateFormatter = NSDateFormatter() // move out of here, it's not good to create a formatter for every cell
+        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
         
-        cell!.textLabel!.text = dateFormatter.stringFromDate(shift.startTime!) // TODO
+        cell.startTime.text! = dateFormatter.stringFromDate(shift.startTime!) // TODO
 
-        return cell!
+        if let endTime = shift.finishTime {
+            cell.endTime.text! = dateFormatter.stringFromDate(endTime)
+        } else {
+            cell.endTime.text! = "not finished"
+        }
+        
+        return cell
     }
 
 
