@@ -118,6 +118,7 @@
                                 <connections>
                                     <outlet property="endTime" destination="PP9-yq-pki" id="2sA-bh-dpI"/>
                                     <outlet property="startTime" destination="8xn-8y-chH" id="KkK-jy-s7V"/>
+                                    <segue destination="Shu-33-VdM" kind="show" id="1Lq-qK-F7v"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -126,11 +127,42 @@
                             <outlet property="delegate" destination="57X-83-Hf5" id="U9J-3u-UvN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Shifts" id="lCN-dD-ULo"/>
+                    <navigationItem key="navigationItem" title="Shifts" id="lCN-dD-ULo">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="jl9-A7-q42"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hfv-J4-LE5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1782" y="780"/>
+        </scene>
+        <!--Shift detail-->
+        <scene sceneID="FH9-Fg-upD">
+            <objects>
+                <viewController id="Shu-33-VdM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4wO-8r-SZH"/>
+                        <viewControllerLayoutGuide type="bottom" id="336-Zd-ElJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wHD-Az-lwK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shift Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIT-DG-8Rt">
+                                <rect key="frame" x="20" y="72" width="107" height="39"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Shift detail" id="Ee5-yg-dvr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i7H-uy-gax" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2448" y="774"/>
         </scene>
         <!--Locations-->
         <scene sceneID="Zx1-Y5-pNn">
@@ -151,6 +183,9 @@
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <segue destination="JRq-Y1-rOM" kind="show" id="BgQ-Nt-IUL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -163,6 +198,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QWo-Xz-mdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1782" y="1516"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gIe-bh-RT2">
+            <objects>
+                <viewController id="JRq-Y1-rOM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YD5-nD-Z99"/>
+                        <viewControllerLayoutGuide type="bottom" id="ou9-En-He4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jfR-Lx-IWA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a01-hI-OZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2448" y="1516"/>
         </scene>
         <!--Locations-->
         <scene sceneID="Jvn-qX-Btc">
@@ -239,7 +293,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJI-kd-pKI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-584" y="1705"/>
+            <point key="canvasLocation" x="-324" y="2248"/>
         </scene>
     </scenes>
 </document>
