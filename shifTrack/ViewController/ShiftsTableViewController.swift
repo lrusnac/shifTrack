@@ -1,10 +1,17 @@
 import UIKit
+import CoreData
 
 class ShiftsTableViewController: UITableViewController {
 
+    var shifts = [Shift]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "\"The List\""
+        tableView.registerClass(UITableViewCell.self,
+            forCellReuseIdentifier: "Cell")
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -12,32 +19,49 @@ class ShiftsTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        print("view will appear")
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+        
+        let fetchRequest = NSFetchRequest(entityName: "Shift")
+        
+        do {
+            let results = try managedContext.executeFetchRequest(fetchRequest)
+            shifts = results as! [Shift]
+            self.tableView.reloadData()
+        } catch let error as NSError {
+            print("Could not fetch  \(error), \(error.userInfo)")
+        }
     }
 
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return shifts.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell")
 
-        // Configure the cell...
+        let shift = shifts[indexPath.row]
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd-MM-yyyy"
+        
+        cell!.textLabel!.text = dateFormatter.stringFromDate(shift.startTime!) // TODO
 
-        return cell
+        return cell!
     }
-    */
+
 
     /*
     // Override to support conditional editing of the table view.
