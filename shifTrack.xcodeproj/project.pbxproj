@@ -25,16 +25,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B322EFF01BE9059A00483DA7 /* MainTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabViewController.swift; path = ViewController/MainTabViewController.swift; sourceTree = "<group>"; };
-		B322EFF21BE90A8700483DA7 /* ShiftsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShiftsTableViewController.swift; path = ViewController/ShiftsTableViewController.swift; sourceTree = "<group>"; };
-		B322EFF41BE90AA700483DA7 /* LocationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationsTableViewController.swift; path = ViewController/LocationsTableViewController.swift; sourceTree = "<group>"; };
-		B322EFF61BE90ACA00483DA7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ViewController/HomeViewController.swift; sourceTree = "<group>"; };
-		B322EFF81BE90CCA00483DA7 /* ReportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReportsViewController.swift; path = ViewController/ReportsViewController.swift; sourceTree = "<group>"; };
-		B322EFFE1BE913C400483DA7 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Location+CoreDataProperties.swift"; path = "Model/Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		B322EFFF1BE913C400483DA7 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = Model/Location.swift; sourceTree = "<group>"; };
-		B322F0001BE913C400483DA7 /* Shift+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Shift+CoreDataProperties.swift"; path = "Model/Shift+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		B322F0011BE913C400483DA7 /* Shift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shift.swift; path = Model/Shift.swift; sourceTree = "<group>"; };
-		B322F0061BF2367600483DA7 /* ShiftTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShiftTableViewCell.swift; path = ViewController/ShiftTableViewCell.swift; sourceTree = "<group>"; };
+		B322EFF01BE9059A00483DA7 /* MainTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		B322EFF21BE90A8700483DA7 /* ShiftsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftsTableViewController.swift; sourceTree = "<group>"; };
+		B322EFF41BE90AA700483DA7 /* LocationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewController.swift; sourceTree = "<group>"; };
+		B322EFF61BE90ACA00483DA7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B322EFF81BE90CCA00483DA7 /* ReportsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsViewController.swift; sourceTree = "<group>"; };
+		B322EFFE1BE913C400483DA7 /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B322EFFF1BE913C400483DA7 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		B322F0001BE913C400483DA7 /* Shift+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shift+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B322F0011BE913C400483DA7 /* Shift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
+		B322F0061BF2367600483DA7 /* ShiftTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftTableViewCell.swift; sourceTree = "<group>"; };
 		B3E2D4D21BE8F8D5009A0550 /* shifTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shifTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E2D4D51BE8F8D5009A0550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E2D4DA1BE8F8D5009A0550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,35 +55,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B322EFEE1BE901DF00483DA7 /* Model */ = {
+		B3D832011BF610C7002E560F /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B322EFF61BE90ACA00483DA7 /* HomeViewController.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		B3D832021BF610D8002E560F /* ShiftsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B322F0061BF2367600483DA7 /* ShiftTableViewCell.swift */,
+				B322F0001BE913C400483DA7 /* Shift+CoreDataProperties.swift */,
+				B322F0011BE913C400483DA7 /* Shift.swift */,
+				B322EFF21BE90A8700483DA7 /* ShiftsTableViewController.swift */,
+			);
+			name = ShiftsViewController;
+			path = ShiftViewController;
+			sourceTree = "<group>";
+		};
+		B3D832031BF610E7002E560F /* LocationViewController */ = {
 			isa = PBXGroup;
 			children = (
 				B322EFFE1BE913C400483DA7 /* Location+CoreDataProperties.swift */,
 				B322EFFF1BE913C400483DA7 /* Location.swift */,
-				B322F0001BE913C400483DA7 /* Shift+CoreDataProperties.swift */,
-				B322F0011BE913C400483DA7 /* Shift.swift */,
+				B322EFF41BE90AA700483DA7 /* LocationsTableViewController.swift */,
 			);
-			name = Model;
+			path = LocationViewController;
 			sourceTree = "<group>";
 		};
-		B322EFEF1BE904EC00483DA7 /* ViewController */ = {
+		B3D832061BF6116D002E560F /* ReportViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B322EFF01BE9059A00483DA7 /* MainTabViewController.swift */,
-				B322EFF21BE90A8700483DA7 /* ShiftsTableViewController.swift */,
-				B322EFF41BE90AA700483DA7 /* LocationsTableViewController.swift */,
-				B322EFF61BE90ACA00483DA7 /* HomeViewController.swift */,
 				B322EFF81BE90CCA00483DA7 /* ReportsViewController.swift */,
-				B322F0061BF2367600483DA7 /* ShiftTableViewCell.swift */,
 			);
-			name = ViewController;
+			path = ReportViewController;
+			sourceTree = "<group>";
+		};
+		B3D832071BF6120F002E560F /* extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = extension;
 			sourceTree = "<group>";
 		};
 		B3E2D4C91BE8F8D5009A0550 = {
 			isa = PBXGroup;
 			children = (
-				B322EFEF1BE904EC00483DA7 /* ViewController */,
-				B322EFEE1BE901DF00483DA7 /* Model */,
 				B3E2D4D41BE8F8D5009A0550 /* shifTrack */,
 				B3E2D4D31BE8F8D5009A0550 /* Products */,
 			);
@@ -100,6 +119,12 @@
 		B3E2D4D41BE8F8D5009A0550 /* shifTrack */ = {
 			isa = PBXGroup;
 			children = (
+				B3D832011BF610C7002E560F /* HomeViewController */,
+				B3D832021BF610D8002E560F /* ShiftsViewController */,
+				B3D832031BF610E7002E560F /* LocationViewController */,
+				B3D832061BF6116D002E560F /* ReportViewController */,
+				B3D832071BF6120F002E560F /* extension */,
+				B322EFF01BE9059A00483DA7 /* MainTabViewController.swift */,
 				B3E2D4D51BE8F8D5009A0550 /* AppDelegate.swift */,
 				B3E2D4D91BE8F8D5009A0550 /* Main.storyboard */,
 				B3E2D4DF1BE8F8D5009A0550 /* Assets.xcassets */,

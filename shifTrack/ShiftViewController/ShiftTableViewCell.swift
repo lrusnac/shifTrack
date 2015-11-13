@@ -24,4 +24,17 @@ class ShiftTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func setShiftViewCell(shift: Shift) {
+        let dateFormatter = NSDateFormatter() // move out of here, it's not good to create a formatter for every cell
+        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
+        
+        self.startTime.text! = dateFormatter.stringFromDate(shift.startTime!) // TODO
+        
+        if let endTime = shift.finishTime {
+            self.endTime.text! = dateFormatter.stringFromDate(endTime)
+        } else {
+            self.endTime.text! = "not finished"
+        }
+
+    }
 }

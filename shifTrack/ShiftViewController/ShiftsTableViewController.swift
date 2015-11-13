@@ -45,23 +45,12 @@ class ShiftsTableViewController: UITableViewController {
         return shifts.count
     }
 
-    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("shift") as! ShiftTableViewCell
         
         let shift = shifts[indexPath.row]
         
-        let dateFormatter = NSDateFormatter() // move out of here, it's not good to create a formatter for every cell
-        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
-        
-        cell.startTime.text! = dateFormatter.stringFromDate(shift.startTime!) // TODO
-
-        if let endTime = shift.finishTime {
-            cell.endTime.text! = dateFormatter.stringFromDate(endTime)
-        } else {
-            cell.endTime.text! = "not finished"
-        }
-        
+        cell.setShiftViewCell(shift)
         return cell
     }
     
@@ -70,8 +59,6 @@ class ShiftsTableViewController: UITableViewController {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-
-
     
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
@@ -84,14 +71,13 @@ class ShiftsTableViewController: UITableViewController {
         }    
     }
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
     }
-    */
-
 }
