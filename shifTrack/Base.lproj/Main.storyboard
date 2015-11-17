@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home-->
@@ -17,10 +18,14 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auM-fw-CHm">
-                                <rect key="frame" x="20" y="8" width="177" height="65"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auM-fw-CHm">
+                                <rect key="frame" x="212" y="93" width="177" height="65"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.72549019609999998" green="0.2901960784" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="177" id="4Xe-KX-Jwc"/>
+                                    <constraint firstAttribute="height" constant="65" id="FBJ-ma-fKm"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="start timer">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -38,8 +43,18 @@
                                     <action selector="toggleLastShift" destination="1Lo-k6-caU" eventType="touchUpInside" id="AxX-HZ-V92"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTH-ag-AXe">
-                                <rect key="frame" x="20" y="81" width="177" height="65"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCl-ax-QoT">
+                                <rect key="frame" x="20" y="20" width="560" height="65"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="ZxF-mK-n9w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.72549019609999998" green="0.2901960784" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTH-ag-AXe">
+                                <rect key="frame" x="212" y="174" width="177" height="65"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.72549019609999998" green="0.2901960784" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -62,10 +77,23 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.953398378582202" green="0.953398378582202" blue="0.953398378582202" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="auM-fw-CHm" firstAttribute="top" secondItem="mCl-ax-QoT" secondAttribute="bottom" constant="8" id="12Y-wS-css"/>
+                            <constraint firstItem="auM-fw-CHm" firstAttribute="centerX" secondItem="RNw-Gp-mFg" secondAttribute="centerX" id="1fe-GS-5AK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mCl-ax-QoT" secondAttribute="trailing" id="7Xy-Ur-6iB"/>
+                            <constraint firstItem="LTH-ag-AXe" firstAttribute="top" secondItem="auM-fw-CHm" secondAttribute="bottom" constant="16" id="FcP-c4-KM1"/>
+                            <constraint firstItem="mCl-ax-QoT" firstAttribute="top" secondItem="DXG-Lq-VPG" secondAttribute="bottom" constant="20" id="L0C-RT-FU4"/>
+                            <constraint firstItem="LTH-ag-AXe" firstAttribute="width" secondItem="auM-fw-CHm" secondAttribute="width" id="Uyd-4P-N0R"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="mCl-ax-QoT" secondAttribute="leading" id="Vt0-ta-pFw"/>
+                            <constraint firstItem="LTH-ag-AXe" firstAttribute="height" secondItem="auM-fw-CHm" secondAttribute="height" id="aZr-8m-jcy"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="mCl-ax-QoT" secondAttribute="leading" id="hby-DW-rWy"/>
+                            <constraint firstItem="LTH-ag-AXe" firstAttribute="centerX" secondItem="RNw-Gp-mFg" secondAttribute="centerX" id="wYk-4x-WHU"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Shift Track" id="417-4V-7Ws"/>
                     <connections>
                         <outlet property="startStopButton" destination="auM-fw-CHm" id="Jw4-Dj-8eJ"/>
+                        <outlet property="timerLabel" destination="mCl-ax-QoT" id="P83-6U-tnI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CI6-pt-zFv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -137,18 +165,21 @@
                     <navigationItem key="navigationItem" title="Shifts" id="lCN-dD-ULo">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="jl9-A7-q42">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="6Hr-YX-HTk" kind="show" id="ED7-kr-LYD"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hfv-J4-LE5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1782" y="780"/>
+            <point key="canvasLocation" x="1758" y="780"/>
         </scene>
-        <!--Shift Detail View Controller-->
+        <!--Shift Detail-->
         <scene sceneID="cVj-p0-hgI">
             <objects>
-                <tableViewController id="6Hr-YX-HTk" customClass="ShiftDetailViewController" customModule="shifTrack" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Shift Detail" id="6Hr-YX-HTk" customClass="ShiftDetailViewController" customModule="shifTrack" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="fTp-te-e4f">
                         <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -255,7 +286,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JaB-n9-1kY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2492" y="774"/>
+            <point key="canvasLocation" x="2448" y="780"/>
         </scene>
         <!--Locations-->
         <scene sceneID="Zx1-Y5-pNn">
@@ -291,7 +322,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QWo-Xz-mdh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1782" y="1516"/>
+            <point key="canvasLocation" x="1758" y="1516"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gIe-bh-RT2">
@@ -426,4 +457,7 @@
             <point key="canvasLocation" x="946" y="89"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="giT-Fp-iLM"/>
+    </inferredMetricsTieBreakers>
 </document>

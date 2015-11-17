@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B312214C1BFB54AA00ECDF38 /* ShiftDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B312214B1BFB54AA00ECDF38 /* ShiftDetailViewController.swift */; };
+		B312214E1BFB6B0400ECDF38 /* NSTimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B312214D1BFB6B0400ECDF38 /* NSTimeIntervalExtension.swift */; };
 		B322EFF11BE9059A00483DA7 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322EFF01BE9059A00483DA7 /* MainTabViewController.swift */; };
 		B322EFF31BE90A8700483DA7 /* ShiftsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322EFF21BE90A8700483DA7 /* ShiftsTableViewController.swift */; };
 		B322EFF51BE90AA700483DA7 /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322EFF41BE90AA700483DA7 /* LocationsTableViewController.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		B312214B1BFB54AA00ECDF38 /* ShiftDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftDetailViewController.swift; sourceTree = "<group>"; };
+		B312214D1BFB6B0400ECDF38 /* NSTimeIntervalExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimeIntervalExtension.swift; sourceTree = "<group>"; };
 		B322EFF01BE9059A00483DA7 /* MainTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		B322EFF21BE90A8700483DA7 /* ShiftsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftsTableViewController.swift; sourceTree = "<group>"; };
 		B322EFF41BE90AA700483DA7 /* LocationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		B3D832071BF6120F002E560F /* extension */ = {
 			isa = PBXGroup;
 			children = (
+				B312214D1BFB6B0400ECDF38 /* NSTimeIntervalExtension.swift */,
 			);
 			name = extension;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				B322EFF31BE90A8700483DA7 /* ShiftsTableViewController.swift in Sources */,
 				B322F0031BE913C400483DA7 /* Location.swift in Sources */,
 				B322EFF71BE90ACA00483DA7 /* HomeViewController.swift in Sources */,
+				B312214E1BFB6B0400ECDF38 /* NSTimeIntervalExtension.swift in Sources */,
 				B322EFF91BE90CCA00483DA7 /* ReportsViewController.swift in Sources */,
 				B312214C1BFB54AA00ECDF38 /* ShiftDetailViewController.swift in Sources */,
 				B3E2D4DE1BE8F8D5009A0550 /* shifTrack.xcdatamodeld in Sources */,

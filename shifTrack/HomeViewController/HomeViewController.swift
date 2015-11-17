@@ -3,33 +3,15 @@ import CoreData
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var startStopButton: UIButton!
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        //get Last shift
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        let managedContext = appDelegate.managedObjectContext
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "contextDidSaveContext:", name: NSManagedObjectContextDidSaveNotification, object: nil)
         
-        let fetchRequest = NSFetchRequest(entityName: "Shift")
-        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "startTime", ascending: false)]
-        fetchRequest.fetchLimit = 1
-        
-        do {
-            let results = try managedContext.executeFetchRequest(fetchRequest)
-            let shifts = results as! [Shift]
-            
-            if shifts.count > 0 && shifts[0].finishTime == nil {
-                startStopButton.setTitle("Stop", forState: UIControlState.Normal)
-            } else {
-                startStopButton.setTitle("Start", forState: UIControlState.Normal)
-            }
-            
-        } catch let error as NSError {
-            print("Could not fetch  \(error), \(error.userInfo)")
-        }
-
+        updateUI()
     }
     
     override func viewDidLoad() {
@@ -38,6 +20,10 @@ class HomeViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     
     @IBAction func toggleLastShift() {
@@ -74,15 +60,42 @@ class HomeViewController: UIViewController {
         } catch let error as NSError {
             print("Could not fetch  \(error), \(error.userInfo)")
         }
-
-        
-        
-            }
+    }
 
     @IBAction func newLocation() {
         
     }
     
+    
+    func contextDidSaveContext(notification: NSNotification) {
+        updateUI()
+    }
+    
+    func updateUI() {
+        //get Last shift
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+        
+        let fetchRequest = NSFetchRequest(entityName: "Shift")
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "startTime", ascending: false)]
+        fetchRequest.fetchLimit = 1
+        
+        do {
+            let results = try managedContext.executeFetchRequest(fetchRequest)
+            let shifts = results as! [Shift]
+            
+            if shifts.count > 0 && shifts[0].finishTime == nil {
+                startStopButton.setTitle("Stop timer", forState: UIControlState.Normal)
+                timerLabel.text = "\(NSDate().timeIntervalSinceDate(shifts[0].startTime!).stringFromInterval())"
+            } else {
+                startStopButton.setTitle("Start timer", forState: UIControlState.Normal)
+                timerLabel.text = ""
+            }
+            
+        } catch let error as NSError {
+            print("Could not fetch  \(error), \(error.userInfo)")
+        }
+    }
     /*
     // MARK: - Navigation
 
