@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B312214C1BFB54AA00ECDF38 /* ShiftDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B312214B1BFB54AA00ECDF38 /* ShiftDetailViewController.swift */; };
 		B322EFF11BE9059A00483DA7 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322EFF01BE9059A00483DA7 /* MainTabViewController.swift */; };
 		B322EFF31BE90A8700483DA7 /* ShiftsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322EFF21BE90A8700483DA7 /* ShiftsTableViewController.swift */; };
 		B322EFF51BE90AA700483DA7 /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322EFF41BE90AA700483DA7 /* LocationsTableViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B312214B1BFB54AA00ECDF38 /* ShiftDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftDetailViewController.swift; sourceTree = "<group>"; };
 		B322EFF01BE9059A00483DA7 /* MainTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
 		B322EFF21BE90A8700483DA7 /* ShiftsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShiftsTableViewController.swift; sourceTree = "<group>"; };
 		B322EFF41BE90AA700483DA7 /* LocationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewController.swift; sourceTree = "<group>"; };
@@ -66,10 +68,11 @@
 		B3D832021BF610D8002E560F /* ShiftsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B322F0061BF2367600483DA7 /* ShiftTableViewCell.swift */,
-				B322F0001BE913C400483DA7 /* Shift+CoreDataProperties.swift */,
 				B322F0011BE913C400483DA7 /* Shift.swift */,
+				B322F0001BE913C400483DA7 /* Shift+CoreDataProperties.swift */,
 				B322EFF21BE90A8700483DA7 /* ShiftsTableViewController.swift */,
+				B322F0061BF2367600483DA7 /* ShiftTableViewCell.swift */,
+				B312214B1BFB54AA00ECDF38 /* ShiftDetailViewController.swift */,
 			);
 			name = ShiftsViewController;
 			path = ShiftViewController;
@@ -215,6 +218,7 @@
 				B322F0031BE913C400483DA7 /* Location.swift in Sources */,
 				B322EFF71BE90ACA00483DA7 /* HomeViewController.swift in Sources */,
 				B322EFF91BE90CCA00483DA7 /* ReportsViewController.swift in Sources */,
+				B312214C1BFB54AA00ECDF38 /* ShiftDetailViewController.swift in Sources */,
 				B3E2D4DE1BE8F8D5009A0550 /* shifTrack.xcdatamodeld in Sources */,
 				B322F0041BE913C400483DA7 /* Shift+CoreDataProperties.swift in Sources */,
 				B322EFF11BE9059A00483DA7 /* MainTabViewController.swift in Sources */,
