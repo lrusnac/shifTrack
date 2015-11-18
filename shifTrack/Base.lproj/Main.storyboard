@@ -347,7 +347,13 @@
         <scene sceneID="Jvn-qX-Btc">
             <objects>
                 <navigationController id="A4v-zy-sdC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Locations" id="hLQ-Pg-om5"/>
+                    <tabBarItem key="tabBarItem" title="Locations" image="locations" id="hLQ-Pg-om5">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="4A7-HE-wZz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -379,7 +385,13 @@
                         <animations/>
                         <color key="backgroundColor" red="0.95339837859999998" green="0.95339837859999998" blue="0.95339837859999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Reports" id="2IL-sn-TJP"/>
+                    <tabBarItem key="tabBarItem" title="Reports" image="reports" id="2IL-sn-TJP">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SKd-NW-Hac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -389,7 +401,13 @@
         <scene sceneID="aCa-xV-Omb">
             <objects>
                 <navigationController title="shifts" id="lsb-5E-boO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Shifts" id="TZn-vv-KWg"/>
+                    <tabBarItem key="tabBarItem" title="Shifts" image="shifts" id="TZn-vv-KWg">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="sSR-15-0GU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -436,7 +454,13 @@
         <scene sceneID="byz-bd-1sE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vwu-o4-PA5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="0fz-X9-ecB"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="0fz-X9-ecB">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="wHT-K5-QBP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -457,6 +481,12 @@
             <point key="canvasLocation" x="946" y="89"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="home" width="25" height="25"/>
+        <image name="locations" width="25" height="25"/>
+        <image name="reports" width="25" height="25"/>
+        <image name="shifts" width="25" height="25"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="giT-Fp-iLM"/>
     </inferredMetricsTieBreakers>
