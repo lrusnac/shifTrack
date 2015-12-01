@@ -42,11 +42,23 @@ class ShiftsTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("shift") as! ShiftTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("shift")!
         
         let shift = shifts[indexPath.row]
         
-        cell.setShiftViewCell(shift)
+        if let endTime = shift.finishTime {
+            cell.detailTextLabel?.text = endTime.timeIntervalSinceDate(shift.startTime!).stringFromInterval()
+            cell.detailTextLabel?.textColor = UIColor.blackColor()
+        } else {
+            cell.detailTextLabel?.text = NSDate().timeIntervalSinceDate(shift.startTime!).stringFromInterval()
+            cell.detailTextLabel?.textColor = UIColor(red:0.60, green:0.20, blue:0.20, alpha:1.0)
+        }
+        
+        
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd MMMM"
+        
+        cell.textLabel?.text = dateFormatter.stringFromDate(shift.startTime!)
         return cell
     }
     
@@ -60,6 +72,10 @@ class ShiftsTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
+            let managedObjectContext = shifts[indexPath.row].managedObjectContext
+            managedObjectContext?.deleteObject(shifts[indexPath.row])
+            if let _ = try? managedObjectContext?.save() {
+            }
             shifts.removeAtIndex(indexPath.item) // delete from core data instead
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
@@ -72,6 +88,19 @@ class ShiftsTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showShiftDetail" {
+            if let cell = sender as? UITableViewCell {
+                let indexPath = tableView.indexPathForCell(cell)
+                if let index = indexPath?.row {
+                    if let shiftDetailViewController = segue.destinationViewController as? ShiftDetailViewController {
+                        shiftDetailViewController.shift = shifts[index]
+                    }
+                }
+            }
+        }
         
+//        if segue.identifier == "newShift" {
+//            
+//        }
     }
 }

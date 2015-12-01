@@ -86,7 +86,7 @@ class HomeViewController: UIViewController {
             
             if shifts.count > 0 && shifts[0].finishTime == nil {
                 startStopButton.setTitle("Stop timer", forState: UIControlState.Normal)
-                timerLabel.text = "\(NSDate().timeIntervalSinceDate(shifts[0].startTime!).stringFromInterval())"
+                timerLabel.text = NSDate().timeIntervalSinceDate(shifts[0].startTime!).stringFromInterval()
             } else {
                 startStopButton.setTitle("Start timer", forState: UIControlState.Normal)
                 timerLabel.text = ""
