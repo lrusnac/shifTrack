@@ -3,7 +3,7 @@ import CoreData
 
 class ShiftsTableViewController: UITableViewController {
 
-    var shifts = [Shift]() // TODO put the datasource in another class
+    var shifts = [Shift]() // TODO put the datasource in another class ??
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,6 @@ class ShiftsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 

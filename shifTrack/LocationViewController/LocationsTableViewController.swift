@@ -1,7 +1,9 @@
 import UIKit
+import CoreData
 
 class LocationsTableViewController: UITableViewController {
-
+    var locations = [Location]() // TODO put the datasource in another class ??
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -10,6 +12,24 @@ class LocationsTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+        
+        let fetchRequest = NSFetchRequest(entityName: "Location")
+        
+        do {
+            let results = try managedContext.executeFetchRequest(fetchRequest)
+            locations = results as! [Location]
+            self.tableView.reloadData()
+        } catch let error as NSError {
+            print("Could not fetch  \(error), \(error.userInfo)")
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,24 +40,22 @@ class LocationsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return locations.count + 2
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("location", forIndexPath: indexPath)
 
-        // Configure the cell...
+        cell.textLabel?.text = "bazinga"
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -59,21 +77,7 @@ class LocationsTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
+     
     /*
     // MARK: - Navigation
 

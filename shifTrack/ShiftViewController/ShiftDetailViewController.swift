@@ -179,6 +179,8 @@ class ShiftDetailViewController: UITableViewController, UIPickerViewDataSource, 
             if let date = dateString {
                 if let startDate = dateFormatter.dateFromString(date) {
                     tempShift.startTime = startDate
+                } else {
+                    // the start date is wrong so don't save nothing
                 }
             }
         }

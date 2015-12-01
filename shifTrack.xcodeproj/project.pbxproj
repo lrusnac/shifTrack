@@ -18,6 +18,7 @@
 		B322F0031BE913C400483DA7 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322EFFF1BE913C400483DA7 /* Location.swift */; };
 		B322F0041BE913C400483DA7 /* Shift+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322F0001BE913C400483DA7 /* Shift+CoreDataProperties.swift */; };
 		B322F0051BE913C400483DA7 /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322F0011BE913C400483DA7 /* Shift.swift */; };
+		B323C38E1C0DDE4100AC4F25 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B323C38D1C0DDE4100AC4F25 /* MapKit.framework */; };
 		B3E2D4D61BE8F8D5009A0550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4D51BE8F8D5009A0550 /* AppDelegate.swift */; };
 		B3E2D4DB1BE8F8D5009A0550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E2D4D91BE8F8D5009A0550 /* Main.storyboard */; };
 		B3E2D4DE1BE8F8D5009A0550 /* shifTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4DC1BE8F8D5009A0550 /* shifTrack.xcdatamodeld */; };
@@ -37,6 +38,7 @@
 		B322EFFF1BE913C400483DA7 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		B322F0001BE913C400483DA7 /* Shift+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shift+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B322F0011BE913C400483DA7 /* Shift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
+		B323C38D1C0DDE4100AC4F25 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B3E2D4D21BE8F8D5009A0550 /* shifTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shifTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E2D4D51BE8F8D5009A0550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E2D4DA1BE8F8D5009A0550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B323C38E1C0DDE4100AC4F25 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,8 +83,8 @@
 		B3D832031BF610E7002E560F /* LocationViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B322EFFE1BE913C400483DA7 /* Location+CoreDataProperties.swift */,
 				B322EFFF1BE913C400483DA7 /* Location.swift */,
+				B322EFFE1BE913C400483DA7 /* Location+CoreDataProperties.swift */,
 				B322EFF41BE90AA700483DA7 /* LocationsTableViewController.swift */,
 			);
 			path = LocationViewController;
@@ -106,6 +109,7 @@
 		B3E2D4C91BE8F8D5009A0550 = {
 			isa = PBXGroup;
 			children = (
+				B323C38D1C0DDE4100AC4F25 /* MapKit.framework */,
 				B3E2D4D41BE8F8D5009A0550 /* shifTrack */,
 				B3E2D4D31BE8F8D5009A0550 /* Products */,
 			);
@@ -170,6 +174,11 @@
 				TargetAttributes = {
 					B3E2D4D11BE8F8D5009A0550 = {
 						CreatedOnToolsVersion = 7.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
