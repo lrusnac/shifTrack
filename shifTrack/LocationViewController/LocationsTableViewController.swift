@@ -44,14 +44,14 @@ class LocationsTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return locations.count + 2
+        return locations.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("location", forIndexPath: indexPath)
 
-        cell.textLabel?.text = "bazinga"
+        cell.textLabel?.text = locations[indexPath.row].name
 
         return cell
     }

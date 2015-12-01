@@ -19,6 +19,7 @@
 		B322F0041BE913C400483DA7 /* Shift+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322F0001BE913C400483DA7 /* Shift+CoreDataProperties.swift */; };
 		B322F0051BE913C400483DA7 /* Shift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B322F0011BE913C400483DA7 /* Shift.swift */; };
 		B323C38E1C0DDE4100AC4F25 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B323C38D1C0DDE4100AC4F25 /* MapKit.framework */; };
+		B323C3901C0E053300AC4F25 /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B323C38F1C0E053300AC4F25 /* LocationDetailViewController.swift */; };
 		B3E2D4D61BE8F8D5009A0550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4D51BE8F8D5009A0550 /* AppDelegate.swift */; };
 		B3E2D4DB1BE8F8D5009A0550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E2D4D91BE8F8D5009A0550 /* Main.storyboard */; };
 		B3E2D4DE1BE8F8D5009A0550 /* shifTrack.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3E2D4DC1BE8F8D5009A0550 /* shifTrack.xcdatamodeld */; };
@@ -39,6 +40,7 @@
 		B322F0001BE913C400483DA7 /* Shift+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Shift+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B322F0011BE913C400483DA7 /* Shift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shift.swift; sourceTree = "<group>"; };
 		B323C38D1C0DDE4100AC4F25 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B323C38F1C0E053300AC4F25 /* LocationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
 		B3E2D4D21BE8F8D5009A0550 /* shifTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shifTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E2D4D51BE8F8D5009A0550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E2D4DA1BE8F8D5009A0550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				B322EFFF1BE913C400483DA7 /* Location.swift */,
 				B322EFFE1BE913C400483DA7 /* Location+CoreDataProperties.swift */,
 				B322EFF41BE90AA700483DA7 /* LocationsTableViewController.swift */,
+				B323C38F1C0E053300AC4F25 /* LocationDetailViewController.swift */,
 			);
 			path = LocationViewController;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			files = (
 				B322F0021BE913C400483DA7 /* Location+CoreDataProperties.swift in Sources */,
 				B3E2D4D61BE8F8D5009A0550 /* AppDelegate.swift in Sources */,
+				B323C3901C0E053300AC4F25 /* LocationDetailViewController.swift in Sources */,
 				B322EFF51BE90AA700483DA7 /* LocationsTableViewController.swift in Sources */,
 				B322F0051BE913C400483DA7 /* Shift.swift in Sources */,
 				B322EFF31BE90A8700483DA7 /* ShiftsTableViewController.swift in Sources */,

@@ -97,9 +97,5 @@ class ShiftsTableViewController: UITableViewController {
                 }
             }
         }
-        
-//        if segue.identifier == "newShift" {
-//            
-//        }
     }
 }
