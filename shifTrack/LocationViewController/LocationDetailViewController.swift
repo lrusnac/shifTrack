@@ -21,6 +21,21 @@ class LocationDetailViewController: UIViewController, UITextFieldDelegate, MKMap
         didSet {
             mapView.delegate = self
             mapView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "mapTabGestureHandler:"))
+            
+            if let loc = location {
+                locationName.text = loc.name
+                
+                let location2D = CLLocationCoordinate2D(latitude: loc.latitude as! CLLocationDegrees, longitude: loc.longitude as! CLLocationDegrees)
+                mapView.setCenterCoordinate(location2D, animated: true)
+                mapView.setRegion(MKCoordinateRegion(center: location2D, span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)), animated: true)
+                //mapView.setVisibleMapRect(MKMapRect(origin: MKMapPoint(x: , y: <#T##Double#>), size: <#T##MKMapSize#>), animated: <#T##Bool#>)
+                
+                mapView.addOverlay(MKCircle(centerCoordinate: location2D, radius: 100 as CLLocationDistance))
+                let annotation = LocationPin(coordinate: location2D)
+                mapView.addAnnotation(annotation)
+            } else {
+                print("location is not set")
+            }
         }
     }
     
@@ -104,8 +119,9 @@ class LocationDetailViewController: UIViewController, UITextFieldDelegate, MKMap
         }
     }
     
-    func textFieldDidEndEditing(textField: UITextField) {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         validatePossibilityToSaveLocation()
+        return true
     }
 }
