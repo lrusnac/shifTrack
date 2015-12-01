@@ -1,6 +1,7 @@
 import UIKit
+import CoreData
 
-class ShiftDetailViewController: UITableViewController {
+class ShiftDetailViewController: UITableViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     enum ShiftDetailRowType: String {
         case LocationName = "locationSelect"
@@ -15,6 +16,19 @@ class ShiftDetailViewController: UITableViewController {
     var startDatePicker: UIDatePicker? = nil
     var endDatePicker: UIDatePicker? = nil
     var locationPicker: UIPickerView? = nil
+    
+    var changesAreMade = false {
+        didSet {
+            if changesAreMade {
+                // show the save button
+                
+                self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Save, target: self, action: "saveShift")
+            } else {
+                //hide the save button
+                self.navigationItem.rightBarButtonItem = nil
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +49,10 @@ class ShiftDetailViewController: UITableViewController {
         endDatePicker?.addTarget(self, action: "endDatePickerChanged:", forControlEvents: UIControlEvents.ValueChanged)
         
         locationPicker = UIPickerView()
-        // add the save button with validation
+        locationPicker?.dataSource = self
+        locationPicker?.delegate = self
+        
+        
     }
     
     // This implementation works only if you have at most one row per type (ShiftDetailRowType)
@@ -142,18 +159,81 @@ class ShiftDetailViewController: UITableViewController {
         }
     }
     
-    // MARK: - Shift specific object
-    var shift: Shift? = nil {
-        didSet{
-            tableView.reloadData()
+    // MARK: - Shift object
+    var shift: Shift? = nil
+    
+    func saveShift() {
+        changesAreMade = false
+        var tempShift: Shift
+        if let finalShift = shift {
+            tempShift = finalShift
+        } else {
+            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            let managedContext = appDelegate.managedObjectContext
+            tempShift = NSEntityDescription.insertNewObjectForEntityForName("Shift", inManagedObjectContext: managedContext) as! Shift
         }
+        
+        // todo location
+        if let indexOfStartDate = tableRows.indexOf(ShiftDetailRowType.StartTime) {
+            let dateString = tableView.cellForRowAtIndexPath(NSIndexPath(forRow: indexOfStartDate, inSection: 0))?.detailTextLabel?.text
+            if let date = dateString {
+                if let startDate = dateFormatter.dateFromString(date) {
+                    tempShift.startTime = startDate
+                }
+            }
+        }
+        
+        if let indexOfEndDate = tableRows.indexOf(ShiftDetailRowType.EndTime) {
+            let dateString = tableView.cellForRowAtIndexPath(NSIndexPath(forRow: indexOfEndDate, inSection: 0))?.detailTextLabel?.text
+            if let date = dateString {
+                if let finishDate = dateFormatter.dateFromString(date) {
+                    tempShift.finishTime = finishDate
+                }
+            }
+        }
+        
+        
+        // save context
+        let managedObjectContext = tempShift.managedObjectContext
+        if let _ = try? managedObjectContext?.save() {
+        }
+        
+        // go back
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
+    // MARK: - DatePicker target-actions
+    func startDatePickerChanged(picker: UIDatePicker) {
+        if let indexOfStartDate = tableRows.indexOf(ShiftDetailRowType.StartTime) {
+            tableView.cellForRowAtIndexPath(NSIndexPath(forRow: indexOfStartDate, inSection: 0))?.detailTextLabel?.text = dateFormatter.stringFromDate(picker.date)
+        }
+        changesAreMade = true
     }
     
     func endDatePickerChanged(picker: UIDatePicker) {
-        print("bazingaaaa \(picker.date)")
+        if let indexOfEndDate = tableRows.indexOf(ShiftDetailRowType.EndTime) {
+            tableView.cellForRowAtIndexPath(NSIndexPath(forRow: indexOfEndDate, inSection: 0))?.detailTextLabel?.text = dateFormatter.stringFromDate(picker.date)
+        }
+        changesAreMade = true
     }
 
-    func startDatePickerChanged(picker: UIDatePicker) {
-        print("bazingaaaa \(picker.date)")
+    // MARK: - UIPickerView data source
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
     }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 4
+    }
+    
+    // MARK: - UIPickerView delegate
+//    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+//        return "bazinga"
+//    }
+//    
+//    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView {
+//        let a = UILabel()
+//        a.text = "bazinga 2"
+//        return a
+//    }
 }
