@@ -1,10 +1,13 @@
 import UIKit
 import CoreData
+import CoreLocation
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var startStopButton: UIButton!
+    
+    let locationManager = CLLocationManager()
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -12,6 +15,10 @@ class HomeViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "contextDidSaveContext:", name: NSManagedObjectContextDidSaveNotification, object: nil)
         
         updateUI()
+        
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+        //loadAllGeotifications()
     }
     
     override func viewDidLoad() {

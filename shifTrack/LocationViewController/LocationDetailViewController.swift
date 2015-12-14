@@ -9,9 +9,30 @@
 import UIKit
 import CoreData
 import MapKit
+import CoreLocation
 
-class LocationDetailViewController: UIViewController, UITextFieldDelegate, MKMapViewDelegate {
-
+class LocationDetailViewController: UIViewController, UITextFieldDelegate, MKMapViewDelegate, CLLocationManagerDelegate {
+    
+    var currentLocation:CLLocationCoordinate2D? = nil {
+        didSet {
+            var location2D: CLLocationCoordinate2D
+            
+            if let curLoc = currentLocation {
+                location2D = curLoc
+            } else {
+                location2D = CLLocationCoordinate2D(latitude: 55.7116714, longitude: 12.5610638)
+            }
+            
+            mapView.setCenterCoordinate(location2D, animated: true)
+            mapView.setRegion(MKCoordinateRegion(center: location2D, span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)), animated: true)
+            
+            mapView.addOverlay(MKCircle(centerCoordinate: location2D, radius: 100 as CLLocationDistance))
+            let annotation = LocationPin(coordinate: location2D)
+            mapView.addAnnotation(annotation)
+        }
+    }
+    let locationManager = CLLocationManager()
+    
     @IBOutlet weak var locationName: UITextField! {
         didSet {
             locationName.delegate = self
@@ -22,20 +43,30 @@ class LocationDetailViewController: UIViewController, UITextFieldDelegate, MKMap
             mapView.delegate = self
             mapView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "mapTabGestureHandler:"))
             
+            var location2D: CLLocationCoordinate2D
+            
             if let loc = location {
                 locationName.text = loc.name
                 
-                let location2D = CLLocationCoordinate2D(latitude: loc.latitude as! CLLocationDegrees, longitude: loc.longitude as! CLLocationDegrees)
-                mapView.setCenterCoordinate(location2D, animated: true)
-                mapView.setRegion(MKCoordinateRegion(center: location2D, span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)), animated: true)
-                //mapView.setVisibleMapRect(MKMapRect(origin: MKMapPoint(x: , y: <#T##Double#>), size: <#T##MKMapSize#>), animated: <#T##Bool#>)
+                location2D = CLLocationCoordinate2D(latitude: loc.latitude as! CLLocationDegrees, longitude: loc.longitude as! CLLocationDegrees)
                 
-                mapView.addOverlay(MKCircle(centerCoordinate: location2D, radius: 100 as CLLocationDistance))
-                let annotation = LocationPin(coordinate: location2D)
-                mapView.addAnnotation(annotation)
+                
             } else {
-                print("location is not set")
+                // get the current position
+                if let curLoc = currentLocation {
+                    location2D = curLoc
+                } else {
+                    location2D = CLLocationCoordinate2D(latitude: 55.7116714, longitude: 12.5610638)
+                }
+                
             }
+            
+            mapView.setCenterCoordinate(location2D, animated: true)
+            mapView.setRegion(MKCoordinateRegion(center: location2D, span: MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)), animated: true)
+            
+            mapView.addOverlay(MKCircle(centerCoordinate: location2D, radius: 100 as CLLocationDistance))
+            let annotation = LocationPin(coordinate: location2D)
+            mapView.addAnnotation(annotation)
         }
     }
     
@@ -43,6 +74,16 @@ class LocationDetailViewController: UIViewController, UITextFieldDelegate, MKMap
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if (CLLocationManager.locationServicesEnabled()) {
+            locationManager.delegate = self
+            locationManager.requestAlwaysAuthorization()
+            locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+            if let _ = location {
+            } else {
+                locationManager.startUpdatingLocation()
+            }
+        }
     }
     
     func mapTabGestureHandler(gesture: UITapGestureRecognizer) {
@@ -123,5 +164,15 @@ class LocationDetailViewController: UIViewController, UITextFieldDelegate, MKMap
         textField.resignFirstResponder()
         validatePossibilityToSaveLocation()
         return true
+    }
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let location = locations.last! as CLLocation
+        if let _ = currentLocation {
+            
+        } else {
+            currentLocation = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+            // print("lon: \(currentLocation?.longitude), lat: \(currentLocation?.latitude)")
+        }
     }
 }

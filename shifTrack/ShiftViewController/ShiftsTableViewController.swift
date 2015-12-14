@@ -7,9 +7,6 @@ class ShiftsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -77,9 +74,7 @@ class ShiftsTableViewController: UITableViewController {
             }
             shifts.removeAtIndex(indexPath.item) // delete from core data instead
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
     }
 
     
